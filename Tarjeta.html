@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de tarjeta</title>
+    <style>
+
+        .container {
+           display: grid; 
+           width: 600px;
+           height: 600px;
+           grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+           grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+           background-image: url(https://images.pexels.com/photos/1757363/pexels-photo-1757363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);  
+           border-radius: 20px;
+        }
+        .ref {
+            grid-column:2/5;
+            grid-row:1/6; 
+            border-radius: 20px;
+            display: flex;
+            background-color: papayawhip;  
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            
+        }
+        .img{
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+        }
+        .name{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            font-style: oblique;
+            color: blue;
+        }
+        .patita{
+           width: 50 px;
+           height: 50px;
+           position: absolute;
+           top: 10px;
+           right: 10px;
+           transform: rotate(30deg);
+        }
+        .patita2{
+           width: 50 px;
+           height: 50px;
+           position: absolute;
+           top: 10px;
+           left: 10px;
+           transform: rotate(-30deg);
+        }
+        .patita3{
+           width: 50 px;
+           height: 50px;
+           position: absolute;
+           top: 540px;
+           right: 10px;
+           transform: rotate(-220deg);
+        }
+        .patita4{
+           width: 50 px;
+           height: 50px;
+           position: absolute;
+           top: 540px;
+           left: 10px;
+           transform: rotate(-120deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="ref">
+            <img class="img" src="https://i.ibb.co/X8G4YCL/Untitled.png" alt="">
+            <p class="name">Abby ♥ </p>
+            <img class="patita" src="https://cdn-icons-png.flaticon.com/512/21/21537.png" alt="">
+            <img class="patita2" src="https://cdn-icons-png.flaticon.com/512/21/21537.png" alt="">
+            <img class="patita3" src="https://cdn-icons-png.flaticon.com/512/21/21537.png" alt="">
+            <img class="patita4" src="https://cdn-icons-png.flaticon.com/512/21/21537.png" alt="">
+            <p>Hola soy abby.</p>
+            <p>Me gusta comer, dormir, jugar y dormir!.</p>
+            <p>Y comer patita de pollo, por favor y gracias!.</p>
+            <p>Y jugar con mis papis de vez en cuando!</p>
+            <p>Postdata: sin besitos porque no me gustan.</p>
+        </div>
+
+    </div>
+   
+
+
+
+</body>
+</html>
